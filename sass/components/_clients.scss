@@ -1,4 +1,6 @@
 .clients { 
+  display: inline-flex;
+  flex-wrap: wrap;
   
   &__title {
     color: var(--main-text-color);
@@ -8,38 +10,26 @@
     letter-spacing: 0.03em;
     margin-bottom: 50px;
   }
-  
-  &__item {
-   
-    margin-right: 30px;
 
-    &:is(:hover,:focus) {
-      border-radius: 4px;
-      border: 1px solid var(--accent-color);
-      --color3: var(--accent-color);
-      --color2: var(--accent-color);
-    }
-  }
-  
-  &__link {
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  &__item {
+    margin-right: 30px;
     width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    transition-property: border, --color3, --color2;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
   }
-  
-  &__icon {
-    text-decoration: none;
-    transition-property: --color3, --color2;
+
+  &__item:is(:hover, :focus){
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+    --color3: var(--accent-color);
+    --color2: var(--accent-color);
+    transition-property: border, --color3, --color2;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
