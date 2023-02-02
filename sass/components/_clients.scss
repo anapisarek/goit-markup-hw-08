@@ -1,6 +1,4 @@
 .clients { 
-  flex-direction: column;
-  justify-content: center;
   
   &__title {
     color: var(--main-text-color);
@@ -12,7 +10,7 @@
   }
   
   &__item {
-    flex-direction: column;
+   
     margin-right: 30px;
 
     &:is(:hover,:focus) {
@@ -25,9 +23,10 @@
   
   &__link {
     text-decoration: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    width: 170px;
+    justify-content: center;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
