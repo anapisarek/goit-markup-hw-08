@@ -189,7 +189,7 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.72;
   letter-spacing: 0.02em;
   font-style: normal;
 }
@@ -275,6 +275,7 @@
   letter-spacing: 0.03em;
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 .socialmedia {
