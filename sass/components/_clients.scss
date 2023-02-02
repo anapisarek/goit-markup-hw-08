@@ -1,5 +1,5 @@
 .clients { 
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   
   &__title {
@@ -12,6 +12,7 @@
   }
   
   &__item {
+    flex-direction: column;
     margin-right: 30px;
 
     &:is(:hover,:focus) {
@@ -33,6 +34,8 @@
     transition-property: border, --color3, --color2;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
   
   &__icon {
