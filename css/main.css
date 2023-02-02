@@ -500,6 +500,11 @@
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 581px) {
+  .mobile__button {
+    display: none;
+  }
+}
 .project {
   padding-bottom: 94px;
 }
@@ -781,6 +786,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.desktop {
+  display: none;
 }
 
 .modal {

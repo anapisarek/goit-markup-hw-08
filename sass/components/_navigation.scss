@@ -4,6 +4,7 @@
   margin-top: 24px;
   margin-bottom: 25px;
 
+
   &__menu {
     display: flex;
   }
@@ -107,4 +108,9 @@
 .mobile__button:is(:hover,:focus){
   cursor: pointer;
   fill: var(--accent-color);
+}
+@media screen and (min-width:581px){
+  .mobile__button{
+    display:none;
+  }
 }
