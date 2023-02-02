@@ -10,14 +10,23 @@ ul {
     padding: 0px;
   }
 .container {
+  max-width: 480px; 
+  @include vars.media-tablet-max {
+    max-width: 768px;
+    }
+  @include vars.media-desktop {
     max-width: 1200px;
-    width: 100%;
+    }
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+
 body {
     color: var('primary-text');
     font-family: 'Roboto', 'Tahoma', sans-serif;
