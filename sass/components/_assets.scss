@@ -18,6 +18,8 @@
   }
   &__item {
     flex-basis: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   &__icon {
     display: flex;
@@ -29,7 +31,6 @@
   }
 }
 @media (min-width:768px) {
-
   .assets__title {
     text-align: left;
   }

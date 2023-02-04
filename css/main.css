@@ -215,6 +215,8 @@
 .assets__item {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .assets__icon {
   display: -webkit-box;
