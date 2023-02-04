@@ -12,6 +12,7 @@
   
   &__list {
     display: flex;
+    flex-direction: column;
   }
 
   &__list:last-child {

@@ -1,21 +1,23 @@
+@use 'utils/vars';
+@use 'utils/global';
 @use 'components/mobile-menu';
 @use 'components/logo';
 @use 'components/headline';
 @use 'components/assets';
+@use 'components/modal';
+@use 'components/form';
+@use 'components/project';
+@use 'components/filter';
+
+
 
 
 @use 'components/navigation';
 @import './components/clients';
-@import './components/filter';
 @import './components/footer';
 @import './components/headline';
-@import './components/project';
 @import './components/socialmedia';
 @import './components/team';
-@import './utils/global';
-@import './utils/vars';
-@import './components/modal';
 @import './components/products';
-@import './components/form';
 
 
