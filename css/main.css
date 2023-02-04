@@ -202,6 +202,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-top: 30px;
 }
 .assets__description {
   color: var(--main-description-color);
@@ -209,6 +210,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: justify;
+  margin-top: 10px;
 }
 .assets__item {
   -ms-flex-preferred-size: 100%;
@@ -226,8 +228,14 @@
           align-items: center;
   height: 120px;
   background-color: var(--portfolio-filter);
+  margin-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .assets__title {
+    text-align: left;
+  }
+}
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
