@@ -1,11 +1,14 @@
 .footer {
-  background-color: var(--footer-background);
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  
+    background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
     &__item {
     margin-bottom: 9px;
+  }
+
+    &__box {
+      display: flex;
   }
 
     &__contact {
@@ -13,7 +16,7 @@
       text-decoration: none;
       font-weight: 500;
       font-size: 14px;
-      line-height: 1.72;
+      line-height: 1.14;
       letter-spacing: 0.02em;
       font-style: normal;
       
@@ -41,11 +44,8 @@
 }
 
 .newsletter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+  margin-left: 78px;
+  padding-top: 12px;
   
   &__title {
     color: var(--white-text);
@@ -54,22 +54,21 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-   margin-top: 120px;
-   margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  &__form {
+    display: inline-flex;
   }
   
   &__input {
-    width: 450px;
+    width: 358px;
     height: 50px;
     border: solid 1px #FFFFFF4D;
     border-radius: 4px;
     background-color: var(--footer-background);
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  &__input::placeholder{
     padding-left: 16px;
+    font-size: 16px;
   }
   
   &__button {
@@ -83,10 +82,14 @@
     line-height: 30px;
     letter-spacing: 0.03em;
     font-weight: 700;
+    margin-left: 12px;
+    display: flex;
+    padding-left: 42px;
+    padding-top: 10px;
     
-   
     &--send {
       margin-left: 24px;
+      margin-top: 3px;
     }
   }
 }
@@ -98,55 +101,5 @@
     letter-spacing: 0.03em;
     font-style: normal;
     margin-top: 20px;
-    margin-bottom: 8px;
-
-  }
-
-  .socialmedia {
-    width: 206px;
-    height: 80px;
-    
-    &__title {
-      color: var(--white-text);
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      margin-top: 60px;
-      margin-bottom: 20px;
-  
-      }
-
-      &__list {
-        display: flex;
-        } 
-
-    &__icon {
-      margin-right: 20px;
-      --color3: var(--white-text);
-      
-      &--svg {
-        text-decoration: none;
-        transition-property: --color3, --color2;
-        transition-duration: 1s;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      }
-
-    &__link {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      width: 44px;
-      height: 44px;
-      background-color: var(--footer-socialmedia-icon);
-      border-radius: 50px;
-      }
-
-    &__link:is(:hover, :focus) {
-      background-color: var(--accent-color);
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    margin-bottom: 9px;
   }

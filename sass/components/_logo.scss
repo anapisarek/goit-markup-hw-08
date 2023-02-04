@@ -2,19 +2,13 @@
   color: var(--black-text);
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
-  margin-right: 93px;
-
+  letter-spacing: 0.03rem;
   &__primary {
     color: var(--accent-color);
   }
-
-  &__tertiary {
+  &__secondary {
     color: var(--white-text);
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    text-decoration: none;
   }
 }

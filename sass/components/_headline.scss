@@ -1,7 +1,6 @@
 .headline {
   display: flex;
   justify-content: center;
-    
   &__title {
     color: var(--white-text);
     font-weight: 900;
@@ -12,24 +11,21 @@
     padding-top: 118px;
     margin-bottom: 30px;
   }
-  
   &__background {
     background-color: var(--footer-background);
-    background-size: cover;
     background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4) 50%,
-      rgba(47, 48, 58, 0.4) 50%), url(../images/background-images/baner-mobile.jpg);
-    max-width: 480px;
+      rgba(47, 48, 58, 0.4) 50%), url(../images/background-images/baner-background-mobile.jpg);
+    background-size: cover;
+    max-width: 1600px;
     width: 100%;
     margin: 0px;
   }
-  
   &__button {
     display: flex;
     justify-content: center;
     padding-bottom: 118px;
-    
     &--order {
       color: var(--white-text);
       font-family: "Roboto";
@@ -37,7 +33,7 @@
       font-size: 16px;
       line-height: 1.87;
       letter-spacing: 0.06em;
-      background:  #2196f3;
+      background: var(--accent-color);
       border: 0px solid;
       border-radius: 4px;
       cursor: pointer;
@@ -45,3 +41,28 @@
     }
   }
 }
+@media (min-width:768px) {
+  .headline__background {
+    background-image:linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4) 50%,
+      rgba(47, 48, 58, 0.4) 50%),url(../images/background-images/baner-background-tablet.jpg);
+  }
+}
+@media (min-width:1200px) {
+  .headline {
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+    &__background {
+      background-image:linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4) 50%,
+      rgba(47, 48, 58, 0.4) 50%),url(../images/background-images/baner-background-desktop.jpg);
+    }
+  }
+}
+
+    
+
