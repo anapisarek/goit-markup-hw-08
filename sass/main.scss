@@ -3,21 +3,25 @@
 @use 'components/mobile-menu';
 @use 'components/logo';
 @use 'components/headline';
-@use 'components/assets';
 @use 'components/modal';
 @use 'components/form';
+@use 'components/navigation';
+@use 'components/clients';
+@use 'components/products';
 @use 'components/project';
 @use 'components/filter';
 
 
 
 
-@use 'components/navigation';
-@import './components/clients';
+
+
+
+@use 'components/assets';
+
 @import './components/footer';
-@import './components/headline';
-@import './components/socialmedia';
+
 @import './components/team';
-@import './components/products';
+
 
 

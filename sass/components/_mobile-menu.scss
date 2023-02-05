@@ -95,3 +95,11 @@
         }
     }
 }
+@media (min-width:768px) {
+    .menu{
+        display:none;
+        &__svg {
+            display: none;
+        }
+    }
+}

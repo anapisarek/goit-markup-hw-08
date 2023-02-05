@@ -31,7 +31,38 @@
   }
 }
 @media (min-width:768px) {
-  .assets__title {
-    text-align: left;
+  .assets {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      flex-basis: calc((100% - 30px) / 2)
+    }
+    &__title {
+      text-align: left;
+    }
+    &__icon {
+      width: 354px;
+    }
+    &__description {
+      text-align:left;
+    }
+  }
+}
+@media (min-width:1200px) {
+  .assets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__title {
+      margin-top: 0px;
+    }
+    &__item {
+      flex-basis: none;
+      padding-right: 30px;
+    }
+    &__icon {
+      width: 270px;
+      margin-bottom: 30px;
+    }
   }
 }
