@@ -1265,12 +1265,6 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .newsletter__title {
   text-align: center;
@@ -1368,6 +1362,9 @@ textarea:focus {
 @media (min-width: 1200px) {
   .newsletter__button {
     margin-top: 0px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-left: 12px;
   }
 }
 .newsletter__button--send {
