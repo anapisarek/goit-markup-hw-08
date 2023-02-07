@@ -21,8 +21,8 @@
         cursor: pointer;
         border: none;
         background-color: var(--white-text);
-    &:is(:hover, :focus) {
-        fill: var(--accent-color);
+        &:is(:hover, :focus) {
+            fill: var(--accent-color);
     }
     &--close {
         cursor: pointer;
@@ -36,17 +36,21 @@
         }
     }
     }
-    &__navigation {
+    &__link {
+        text-decoration: none;
         font-size: 40px;
         font-weight: 500;
         color: var(--main-text-color);
         cursor: pointer;
         margin-bottom: 302px;
-        &--item {
-            margin-bottom: 32px;
-            &:is(:hover, :focus) {
+        &:is(:hover, :focus) {
             color: var(--accent-color);
         }
+    }
+    &__navigation {
+        margin-bottom: 302px;
+        &--item {
+            margin-bottom: 32px;
         &:last-child {
             margin-bottom: none;
         }
@@ -71,6 +75,9 @@
             font-weight: 500;
             margin-bottom: 32px;
         }
+    }
+    &__svg {
+        margin-right:35px;
     }
     &__social {
         display:flex;

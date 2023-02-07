@@ -23,11 +23,6 @@ body {
   color: var("primary-text");
   font-family: "Roboto", "Tahoma", sans-serif;
 }
-@media (min-width: 1200px) {
-  body {
-    overflow: hidden;
-  }
-}
 
 ul {
   list-style: none;
@@ -101,18 +96,22 @@ ul {
 .menu__button--close:is(:hover, :focus) {
   fill: var(--accent-color);
 }
-.menu__navigation {
+.menu__link {
+  text-decoration: none;
   font-size: 40px;
   font-weight: 500;
   color: var(--main-text-color);
   cursor: pointer;
   margin-bottom: 302px;
 }
+.menu__link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+.menu__navigation {
+  margin-bottom: 302px;
+}
 .menu__navigation--item {
   margin-bottom: 32px;
-}
-.menu__navigation--item:is(:hover, :focus) {
-  color: var(--accent-color);
 }
 .menu__navigation--item:last-child {
   margin-bottom: none;
@@ -141,6 +140,9 @@ ul {
   font-size: 34px;
   font-weight: 500;
   margin-bottom: 32px;
+}
+.menu__svg {
+  margin-right: 35px;
 }
 .menu__social {
   display: -webkit-box;
@@ -783,6 +785,8 @@ textarea:focus {
           justify-content: center;
   gap: 30px;
   padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 @media (min-width: 1200px) {
   .clients {
@@ -881,11 +885,15 @@ textarea:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .team__list {
     -ms-flex-preferred-size: content;
         flex-basis: content;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -893,9 +901,6 @@ textarea:focus {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-}
-.team__list:last-child {
-  margin-right: 0px;
 }
 .team__item {
   background-color: var(--white-text);

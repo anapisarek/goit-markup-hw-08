@@ -16,15 +16,16 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
     @media (min-width:768px) {
       flex-basis: content;
+      padding-left: 0px;
+      padding-right: 0px;
     }
     @media (min-width:1200px) {
       flex-wrap: nowrap;
     }
-  }
-  &__list:last-child {
-    margin-right: 0px;
   }
   &__item {
     background-color: var(--white-text);
