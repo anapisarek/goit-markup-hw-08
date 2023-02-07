@@ -8,6 +8,9 @@
 body {
   color: var('primary-text');
   font-family: 'Roboto', 'Tahoma', sans-serif;
+  @media (min-width:1200px) {
+    overflow: hidden;
+  }
 }
 ul {
   list-style: none;
