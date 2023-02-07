@@ -903,6 +903,11 @@ textarea:focus {
     height: 428px;
   }
 }
+.team__picture {
+  display: block;
+  height: auto;
+  width: 100%;
+}
 .team__member {
   color: var(--main-text-color);
   font-weight: 500;
@@ -1029,9 +1034,13 @@ textarea:focus {
 .assets__item {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .assets__item {
+    padding-left: 0px;
+    padding-right: 0px;
     width: 354px;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -1339,6 +1348,7 @@ textarea:focus {
 @media (min-width: 1200px) {
   .newsletter__input {
     width: 358px;
+    margin-bottom: 30px;
   }
 }
 .newsletter__button {
@@ -1365,6 +1375,7 @@ textarea:focus {
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-left: 12px;
+    margin-bottom: 30px;
   }
 }
 .newsletter__button--send {

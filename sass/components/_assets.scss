@@ -28,7 +28,11 @@
   }
   &__item {
     flex-basis: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     @media (min-width:768px) {
+      padding-left: 0px;
+      padding-right: 0px;
       width:354px;
       flex-basis: calc((100% - 30px) / 2)
     }

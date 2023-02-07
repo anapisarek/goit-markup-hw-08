@@ -43,6 +43,11 @@
       height: 428px;
     }
   }
+  &__picture {
+    display:block;
+    height: auto;
+    width: 100%;
+  }
   &__member {
     color: var(--main-text-color);
     font-weight: 500;
