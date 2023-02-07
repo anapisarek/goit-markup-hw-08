@@ -23,6 +23,11 @@ body {
   color: var("primary-text");
   font-family: "Roboto", "Tahoma", sans-serif;
 }
+@media (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+}
 
 ul {
   list-style: none;
@@ -210,6 +215,11 @@ ul {
   padding-top: 118px;
   margin-bottom: 30px;
 }
+@media (min-width: 1200px) {
+  .headline__title {
+    padding-top: 200px;
+  }
+}
 .headline__background {
   background-color: var(--footer-background);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), color-stop(50%, rgba(47, 48, 58, 0.4))), url(../images/background-images/baner-background-mobile.jpg);
@@ -227,6 +237,11 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 118px;
+}
+@media (min-width: 1200px) {
+  .headline__button {
+    padding-bottom: 200px;
+  }
 }
 .headline__button--order {
   color: var(--white-text);
