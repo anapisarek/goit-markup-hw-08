@@ -6,6 +6,7 @@
     left:0;
     background-color: var(--white-text);
     z-index: 2;
+    overflow: hidden;
     &.is-open {
         display: block;
         transform: translateX(100%);
