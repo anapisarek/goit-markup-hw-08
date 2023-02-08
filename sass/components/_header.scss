@@ -7,6 +7,9 @@
   &__contact {
     display: none;
   }
+  &__logo {
+    margin-right: 270px;
+  }
 }
 @media (min-width:768px) {
   .navigation {
@@ -14,7 +17,6 @@
     align-items: center;
     &__menu {
       display: flex;
-      margin-left:-215px;
     }
     &__icons{
       margin-right: 10px;
@@ -22,6 +24,11 @@
     &__item {
       margin-right: 60px;
       position: relative;
+    }
+    &__logo {
+      @media (min-width:768px) {
+        margin-right: 93px;
+      }
     }
     &__contact {
       display: flex;
@@ -86,22 +93,20 @@
 }
 @media (min-width:1200px) {
   .navigation {
-    padding-top: 5px;
-    padding-bottom: 5px;
     &__contact {
     display: flex;
     flex-direction: row;
   }
   &__link--primary::after {
     width:53px;
-    top:44px;
+    top:40px;
   }
   &__item {
     margin-right: 46px;
   }
   &__contact {
     font-size: 14px;
-  margin-left: 310px;
+  margin-left: 280px;
   }
 }
 }
