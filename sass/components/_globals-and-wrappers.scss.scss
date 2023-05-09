@@ -1,0 +1,72 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @extend %font-main-body;
+}
+
+.wrapper {
+  max-width: 480px;
+  margin: auto;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 60px 0px;
+}
+
+.style-link {
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $hover-bg-color;
+    outline-color: $hover-bg-color;
+    outline-offset: 5px;
+  }
+}
+
+svg {
+  display: inline-block;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper,
+  .container {
+    max-width: 768px;
+  }
+  .section {
+    padding: 94px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 1600px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
